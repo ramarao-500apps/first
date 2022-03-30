@@ -1,0 +1,20 @@
+<div id="app">
+	<contact-us></contact-us>
+</div>
+Vue.component('contact-us', {
+	data: function() {
+		return {
+			email: 'info@mantratechnoligies.com'
+		};
+	},
+	template: `
+		<div>
+			<h1>Contact Us</h1>
+			<p>Please send an e-mail to: {{ email }}</p>
+		</div>
+	`
+});
+
+new Vue({
+	el: '#app',
+});
